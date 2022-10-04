@@ -11,6 +11,11 @@ export function Home() {
     console.log('voce clicou no botão');
     
   }
+  
+  function handleRemoveParticipant(name: string){
+    console.log(`voce clicou em remover ${name}`);
+
+  }
 
 
   return (
@@ -34,9 +39,7 @@ export function Home() {
           </Text>
         </TouchableOpacity>
       </View>
-      <Participant name="Diogo Marques"/>
-      <Participant name="Guilherme Ghilardi"/>
-      <Participant name="Frederico Nacarato"/>
+      <Participant name="Diogo Marques" onRemove={() => handleRemoveParticipant("Diogo Marques")}/>
     </View>
   );
 }

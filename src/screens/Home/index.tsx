@@ -34,9 +34,9 @@ export function Home() {
           </Text>
         </TouchableOpacity>
       </View>
-      <Participant />
-      <Participant />
-      <Participant />
+      <Participant name="Diogo Marques"/>
+      <Participant name="Guilherme Ghilardi"/>
+      <Participant name="Frederico Nacarato"/>
     </View>
   );
 }
